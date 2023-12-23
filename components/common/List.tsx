@@ -22,7 +22,7 @@ export default function List() {
       setLoading(false);
       setData(data);
     };
-
+    
     getData();
   }, []);
 
@@ -82,7 +82,7 @@ export default function List() {
                     </div>
 
                     <div className="flex flex-col gap-5">
-                      {filteredTickets.map((ticket: TicketType) => (
+                      {filteredTickets?.map((ticket: TicketType) => (
                         <Card
                           key={ticket.id}
                           ticket={ticket}
@@ -121,7 +121,7 @@ export default function List() {
                     </div>
 
                     <div className="flex flex-col gap-5">
-                      {filteredTickets.map((ticket: TicketType) => (
+                      {filteredTickets?.map((ticket: TicketType) => (
                         <Card
                           key={ticket.id}
                           ticket={ticket}
@@ -171,7 +171,7 @@ export default function List() {
                   </div>
 
                   <div className="flex flex-col gap-5">
-                    {filteredTickets.map((ticket: TicketType) => (
+                    {filteredTickets?.map((ticket: TicketType) => (
                       <Card key={ticket.id} ticket={ticket} userMap={userMap} />
                     ))}
                   </div>
