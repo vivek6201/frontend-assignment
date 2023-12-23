@@ -3,7 +3,7 @@ import Navbar from "@/components/common/Navbar";
 
 export default function Home() {
   return (
-    <div>
+    <div className="grid grid-rows-[80px_1fr] min-h-screen">
       <Navbar />
       <List />
     </div>
